@@ -172,3 +172,22 @@
 .btn2 span i :hover{
     transform: scale(1.1) translateY(5px);
 }
+/*nav bar- visible -first js code after type this*/
+header.sticky{
+    background: var(--bg-color);
+    border-bottom: 1px solid #ffffff1a;
+    padding: 12px 15%;
+}
+.about{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.about-image img{
+    max-width: 400px;
+    height: auto;
+    width: 100%;
+    border-radius: 8px;
+}
