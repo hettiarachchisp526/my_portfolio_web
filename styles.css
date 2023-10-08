@@ -11,7 +11,7 @@
         --text-color:#fff;
         --second-color:#ccc;
         --main-color:#ff4d05;
-        --big-font: 5rem;
+        --big-font: 4rem;
         --h2-font:3rem;
         --p-font: 1.1rem;
     }
@@ -466,8 +466,8 @@ form textarea{
 
 @media (max-width: 1100px){
   :root{
-    --big-font: 4rem;
-    --h2-font:2.5rem;
+    --big-font: 3rem;
+    --h2-font:2rem;
     --p-font: 1rem;
     transition:  .1s;
   }
@@ -480,10 +480,12 @@ form textarea{
 }
 
 @media (max-width: 920px){
+
+
     .about{
         grid-template-columns: 1fr;
     }
-    .about-image{
+   /* .about-image{
         text-align: center;
         order: 2;
     }
@@ -491,6 +493,9 @@ form textarea{
         width: 100%;
         height: auto;
         max-width: 100%;
+    }*/
+    .about-image{
+        display: none;
     }
     .contact{
         grid-template-columns: 1fr;
@@ -528,4 +533,36 @@ form textarea{
     .navlist.open{
         top:100%;
     }
-}
+
+    .about-image{
+        display: none;
+    }
+    :root{
+        --big-font: 2.5rem;
+        --h2-font:1.5rem;
+
+      }
+      .home-text h3{
+        font-size: 2rem;
+      }
+      .btn{
+        padding: 10px 26px;
+      }
+      .btn2 span i{
+        height: 50px;
+        width: 50px;
+      }
+
+      @media (max-width: 480px){
+        :root{
+            --big-font: 2.5rem;
+            --h2-font:1.5rem;
+            --p-font: 0.9rem;
+            transition:  .1s;
+          }
+          .home-text h3{
+            font-size: 1.5rem;
+          }
+      }
+      
+    }
